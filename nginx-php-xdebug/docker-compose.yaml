@@ -4,6 +4,7 @@ services:
     build: ./docker/php/
     volumes:
       - ./:/var/www/html
+      - ./docker/php/conf.d:/usr/local/etc/php/conf.d/
     environment:
       XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9003 remote_enable=1 mode=debug
   webserver:
