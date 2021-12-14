@@ -1,5 +1,6 @@
 <?php
-var_dump($_REQUEST);
-echo "Hbeasdj";
-echo "ASD";
+$x = 10;
+
+echo "xxx";
+xdebug_info();
 ?>

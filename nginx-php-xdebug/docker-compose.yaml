@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/var/www/html
     environment:
-      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9003 remote_enable=1
+      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9003 remote_enable=1 mode=debug
   webserver:
     image: nginx:latest
     ports:
