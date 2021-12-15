@@ -1,6 +1,4 @@
 <?php
-$x = 10;
-
-echo "xxx";
+echo "hej";
 xdebug_info();
 ?>
