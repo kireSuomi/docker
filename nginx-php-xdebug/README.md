@@ -1,6 +1,5 @@
-# Nginx with php-fpm and XDebug.
+# Setup Project
 
-### Start env
-
-- docker-compose up
-- Start xDebug listener in vs-code
+1. `composer create-project roots/bedrock`
+2. `copy ./example.env /bedrock/.env`
+3. `docker compose up`
