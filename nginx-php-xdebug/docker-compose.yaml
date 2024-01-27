@@ -26,7 +26,8 @@ services:
         MYSQL_DATABASE: 'root'
     ports:
         - 3306:3306
-
+    volumes:
+      - db_data:/var/lib/mysql
   adminer:
     image: adminer:latest
     restart: always
@@ -35,3 +36,5 @@ services:
     links:
       - php
       - mysql
+volumes:
+  db_data: {}
